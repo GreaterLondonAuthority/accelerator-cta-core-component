@@ -1,0 +1,7 @@
+{
+    "name": "gla/accelerator_cta_core_component",
+    "type": " drupal-module",
+    "license": "OGL-3.0",
+    "description": "Core Call to Action component used by the GLA drupal accelerator and all drupal sites within the GLA estate”
+}
+
