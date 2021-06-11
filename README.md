@@ -5,13 +5,13 @@ This project contains the core component for the 'call to action' component used
 # installation
 This project is downloaded using composer
 ```
-composer require gla/accelerator_cta_core_component
+composer require gla/accelerator-cta-core-component
 ```
 
 ```
    {
        "require": {
-           "gla/accelerator_cta_core_component": "^1.0"
+           "gla/accelerator-cta-core-component": "^1.0"
        }
    } 
 ```
