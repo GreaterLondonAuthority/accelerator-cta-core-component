@@ -1,0 +1,8 @@
+name: 'CTA'
+type: module
+description: 'Provides a cta content type.'
+core_version_requirement: ^8.8 || ^9
+package: Custom
+dependencies:
+  - drupal:media_library
+  - paragraphs:paragraphs
