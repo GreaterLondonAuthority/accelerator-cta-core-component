@@ -8,9 +8,11 @@ dependencies:
     - field.field.paragraph.cta.field_p_c_title
     - field.field.paragraph.cta.field_p_c_type
     - paragraphs.paragraphs_type.cta
-  module:
-    - link
-    - media_library
+  enforced:
+    module:
+      - gla_cta
+      - link
+      - media_library
 id: paragraph.cta.default
 targetEntityType: paragraph
 bundle: cta

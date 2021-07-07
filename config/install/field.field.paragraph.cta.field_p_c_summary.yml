@@ -4,6 +4,9 @@ dependencies:
   config:
     - field.storage.paragraph.field_p_c_summary
     - paragraphs.paragraphs_type.cta
+  enforced:
+    module:
+      - gla_cta
 id: paragraph.cta.field_p_c_summary
 field_name: field_p_c_summary
 entity_type: paragraph
