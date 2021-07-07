@@ -4,8 +4,10 @@ dependencies:
   config:
     - field.storage.paragraph.field_p_c_link
     - paragraphs.paragraphs_type.cta
-  module:
-    - link
+  enforced:
+    module:
+      - gla_cta
+      - link
 id: paragraph.cta.field_p_c_link
 field_name: field_p_c_link
 entity_type: paragraph

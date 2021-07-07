@@ -4,8 +4,10 @@ dependencies:
   config:
     - field.storage.paragraph.field_p_c_type
     - paragraphs.paragraphs_type.cta
-  module:
-    - options
+  enforced:
+    module:
+      - gla_cta
+      - options
 id: paragraph.cta.field_p_c_type
 field_name: field_p_c_type
 entity_type: paragraph

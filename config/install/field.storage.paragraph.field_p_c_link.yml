@@ -1,9 +1,11 @@
 langcode: en
 status: true
 dependencies:
-  module:
-    - link
-    - paragraphs
+  enforced:
+    module:
+      - gla_cta
+      - link
+      - paragraphs
 id: paragraph.field_p_c_link
 field_name: field_p_c_link
 entity_type: paragraph
