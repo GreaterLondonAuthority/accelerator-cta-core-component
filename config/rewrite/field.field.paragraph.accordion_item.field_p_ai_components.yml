@@ -1,0 +1,11 @@
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.cta
+settings:
+  handler_settings:
+    target_bundles:
+      cta: cta
+    target_bundles_drag_drop:
+      cta:
+        enabled: true
+        weight: 0
