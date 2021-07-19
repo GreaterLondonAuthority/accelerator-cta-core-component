@@ -1,7 +1,16 @@
 {
-    "name": "gla/accelerator-cta-core-component",
-    "type": "gla-estate-module",
-    "license": "OGL-3.0",
-    "description": "Core Call to Action component used by the GLA drupal accelerator and all drupal sites within the GLA estate"
+  "name": "gla/accelerator-cta-core-component",
+  "type": "gla-estate-module",
+  "license": "OGL-3.0",
+  "description": "Core Call to Action component used by the GLA drupal accelerator and all drupal sites within the GLA estate",
+  "require-dev": {
+    "vijaycs85/drupal-quality-checker": "dev-master"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/lukewhitmore/drupal-quality-checker"
+    }
+  ]
 }
 
