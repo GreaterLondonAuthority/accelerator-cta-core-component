@@ -1,6 +1,8 @@
 # Accelerator 'call to action' component
 
-This project contains the core component for the 'call to action' component used by the GLA drupal accelerator and all drupal sites within the GLA estate
+This project contains the core component for the 'call to action'
+component used by the GLA drupal accelerator and all drupal sites within
+the GLA estate
 
 # installation
 This project is downloaded using composer
