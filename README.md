@@ -1,3 +1,5 @@
+[![Drupal Code Quality](https://github.com/GreaterLondonAuthority/accelerator-cta-core-component/actions/workflows/drupal-code-quality.yml/badge.svg)](https://github.com/GreaterLondonAuthority/accelerator-cta-core-component/actions/workflows/drupal-code-quality.yml)
+
 # Accelerator 'call to action' component
 
 This project contains the core component for the 'call to action'
