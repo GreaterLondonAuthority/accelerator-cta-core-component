@@ -6,6 +6,9 @@ dependencies:
       - gla_cta
       - options
       - paragraphs
+  module:
+    - options
+    - paragraphs
 id: paragraph.field_p_cta_type
 field_name: field_p_cta_type
 entity_type: paragraph

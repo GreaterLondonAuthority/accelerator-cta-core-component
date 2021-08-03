@@ -8,6 +8,8 @@ dependencies:
     module:
       - gla_cta
       - link
+  module:
+    - link
 id: paragraph.cta.field_p_cta_link
 field_name: field_p_cta_link
 entity_type: paragraph

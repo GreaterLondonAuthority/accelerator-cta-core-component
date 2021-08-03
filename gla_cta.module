@@ -14,13 +14,13 @@ function gla_cta_field_widget_paragraphs_form_alter(&$element, FormStateInterfac
 
   // Use Drupal States to hide the image field if the CTA type is not image.
   if ($element['#paragraph_type'] == 'cta') {
-    if (isset($element['subform']['field_p_c_image'])) {
+    if (isset($element['subform']['field_p_cta_image'])) {
       if (!empty($element['subform']['#parents'])) {
         $parents = $element['subform']['#parents'];
         $name = array_shift($parents) . '[';
         $name .= implode('][', $parents);
-        $name .= '][field_p_c_type]';
-        $element['subform']['field_p_c_image']['#states'] = [
+        $name .= '][field_p_cta_type]';
+        $element['subform']['field_p_cta_image']['#states'] = [
           'visible' => [
             ':input[name="' . $name . '"]' => ['value' => 'image'],
           ],

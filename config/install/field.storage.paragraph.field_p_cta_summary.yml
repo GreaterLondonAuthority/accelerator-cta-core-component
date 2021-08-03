@@ -5,6 +5,8 @@ dependencies:
     module:
       - gla_cta
       - paragraphs
+  module:
+    - paragraphs
 id: paragraph.field_p_cta_summary
 field_name: field_p_cta_summary
 entity_type: paragraph

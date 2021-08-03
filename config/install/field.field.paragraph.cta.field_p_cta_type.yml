@@ -8,6 +8,8 @@ dependencies:
     module:
       - gla_cta
       - options
+  module:
+    - options
 id: paragraph.cta.field_p_cta_type
 field_name: field_p_cta_type
 entity_type: paragraph

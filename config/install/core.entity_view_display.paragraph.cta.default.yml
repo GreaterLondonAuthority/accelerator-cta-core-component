@@ -12,6 +12,8 @@ dependencies:
     module:
       - gla_cta
       - link
+  module:
+    - link
 id: paragraph.cta.default
 targetEntityType: paragraph
 bundle: cta
