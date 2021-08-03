@@ -2,14 +2,14 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_p_c_type
+    - field.storage.paragraph.field_p_cta_type
     - paragraphs.paragraphs_type.cta
   enforced:
     module:
       - gla_cta
       - options
-id: paragraph.cta.field_p_c_type
-field_name: field_p_c_type
+id: paragraph.cta.field_p_cta_type
+field_name: field_p_cta_type
 entity_type: paragraph
 bundle: cta
 label: Type

@@ -6,8 +6,8 @@ dependencies:
       - gla_cta
       - options
       - paragraphs
-id: paragraph.field_p_c_type
-field_name: field_p_c_type
+id: paragraph.field_p_cta_type
+field_name: field_p_cta_type
 entity_type: paragraph
 type: list_string
 settings:

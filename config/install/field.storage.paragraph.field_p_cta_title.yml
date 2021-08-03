@@ -5,11 +5,13 @@ dependencies:
     module:
       - gla_cta
       - paragraphs
-id: paragraph.field_p_c_summary
-field_name: field_p_c_summary
+id: paragraph.field_p_cta_title
+field_name: field_p_cta_title
 entity_type: paragraph
-type: string_long
+type: string
 settings:
+  max_length: 255
+  is_ascii: false
   case_sensitive: false
 module: core
 locked: false
