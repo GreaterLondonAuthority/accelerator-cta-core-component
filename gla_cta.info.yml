@@ -1,10 +1,11 @@
-name: CTA
+name: 'GLA CTA'
 type: module
 description: 'Provides a CTA component'
 core_version_requirement: '^8.9 || ^9'
 package: Custom
 dependencies:
   - 'drupal:field'
+  - 'drupal:image'
   - 'drupal:link'
   - 'drupal:media'
   - 'drupal:media_library'
