@@ -11,8 +11,8 @@ id: paragraph.cta.field_p_cta_title
 field_name: field_p_cta_title
 entity_type: paragraph
 bundle: cta
-label: Title
-description: 'Please limit your text to less that 120 characters.'
+label: Heading
+description: ''
 required: true
 translatable: false
 default_value: {  }

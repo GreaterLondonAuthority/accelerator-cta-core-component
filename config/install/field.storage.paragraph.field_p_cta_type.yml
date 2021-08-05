@@ -17,10 +17,13 @@ settings:
   allowed_values:
     -
       value: image
-      label: 'Image CTA'
+      label: Image
     -
-      value: text
-      label: 'Text CTA'
+      value: simple
+      label: Simple
+    -
+      value: talk_london
+      label: 'Talk London'
   allowed_values_function: ''
 module: options
 locked: false
