@@ -25,8 +25,8 @@ content:
     weight: 3
     label: hidden
     settings:
-      image_style: ''
       image_link: ''
+      image_style: ''
     third_party_settings: {  }
     region: content
   field_p_cta_link:
