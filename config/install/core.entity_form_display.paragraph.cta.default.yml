@@ -5,7 +5,7 @@ dependencies:
     - field.field.paragraph.cta.field_p_cta_image
     - field.field.paragraph.cta.field_p_cta_link
     - field.field.paragraph.cta.field_p_cta_summary
-    - field.field.paragraph.cta.field_p_cta_title
+    - field.field.paragraph.cta.field_p_cta_heading
     - field.field.paragraph.cta.field_p_cta_type
     - paragraphs.paragraphs_type.cta
   enforced:
@@ -44,7 +44,7 @@ content:
     third_party_settings: {  }
     type: string_textarea
     region: content
-  field_p_cta_title:
+  field_p_cta_heading:
     weight: 1
     settings:
       size: 60

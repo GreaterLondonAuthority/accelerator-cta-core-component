@@ -2,13 +2,13 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_p_cta_title
+    - field.storage.paragraph.field_p_cta_heading
     - paragraphs.paragraphs_type.cta
   enforced:
     module:
       - gla_cta
-id: paragraph.cta.field_p_cta_title
-field_name: field_p_cta_title
+id: paragraph.cta.field_p_cta_heading
+field_name: field_p_cta_heading
 entity_type: paragraph
 bundle: cta
 label: Heading

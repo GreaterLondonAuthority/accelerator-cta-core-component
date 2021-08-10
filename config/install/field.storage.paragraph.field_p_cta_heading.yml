@@ -7,8 +7,8 @@ dependencies:
       - paragraphs
   module:
     - paragraphs
-id: paragraph.field_p_cta_title
-field_name: field_p_cta_title
+id: paragraph.field_p_cta_heading
+field_name: field_p_cta_heading
 entity_type: paragraph
 type: string
 settings:
