@@ -2,31 +2,40 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.cta.field_p_cta_heading
     - field.field.paragraph.cta.field_p_cta_image
     - field.field.paragraph.cta.field_p_cta_link
     - field.field.paragraph.cta.field_p_cta_summary
-    - field.field.paragraph.cta.field_p_cta_heading
     - field.field.paragraph.cta.field_p_cta_type
     - paragraphs.paragraphs_type.cta
+    - responsive_image.styles.cta_component
   enforced:
     module:
       - gla_cta
       - link
   module:
     - link
-    - media
+    - media_responsive_thumbnail
 id: paragraph.cta.default
 targetEntityType: paragraph
 bundle: cta
 mode: default
 content:
+  field_p_cta_heading:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   field_p_cta_image:
-    type: media_thumbnail
+    type: media_responsive_thumbnail
     weight: 3
     label: hidden
     settings:
+      responsive_image_style: cta_component
       image_link: ''
-      image_style: ''
     third_party_settings: {  }
     region: content
   field_p_cta_link:
@@ -47,14 +56,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: basic_string
-    region: content
-  field_p_cta_heading:
-    weight: 0
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
     region: content
 hidden:
   field_p_cta_type: true

@@ -1,0 +1,81 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.cta_component_lg
+    - image.style.cta_component_lg_2x
+    - image.style.cta_component_md
+    - image.style.cta_component_md_2x
+    - image.style.cta_component_sm
+    - image.style.cta_component_sm_2x
+    - image.style.cta_component_xl
+    - image.style.cta_component_xl_2x
+    - image.style.cta_component_xxl
+    - image.style.cta_component_xxl_2x
+  theme:
+    - gla_core_theme
+id: cta_component
+label: 'CTA component'
+image_style_mappings:
+  -
+    breakpoint_id: gla_core_theme.xxl
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: cta_component_xxl
+  -
+    breakpoint_id: gla_core_theme.xxl
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: cta_component_xxl_2x
+  -
+    breakpoint_id: gla_core_theme.xl
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: cta_component_xl
+  -
+    breakpoint_id: gla_core_theme.xl
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: cta_component_xl_2x
+  -
+    breakpoint_id: gla_core_theme.lg
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: cta_component_lg
+  -
+    breakpoint_id: gla_core_theme.lg
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: cta_component_lg_2x
+  -
+    breakpoint_id: gla_core_theme.md
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: cta_component_md
+  -
+    breakpoint_id: gla_core_theme.md
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: cta_component_md_2x
+  -
+    breakpoint_id: gla_core_theme.sm
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: cta_component_sm
+  -
+    breakpoint_id: gla_core_theme.sm
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: cta_component_sm_2x
+  -
+    breakpoint_id: gla_core_theme.minimum
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: cta_component_sm
+  -
+    breakpoint_id: gla_core_theme.minimum
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: cta_component_sm_2x
+breakpoint_group: gla_core_theme
+fallback_image_style: cta_component_sm

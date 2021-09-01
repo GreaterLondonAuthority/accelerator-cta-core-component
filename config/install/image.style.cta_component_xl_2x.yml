@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: cta_component_xl_2x
+label: 'CTA component (xl, 2x)'
+effects:
+  0593909f-5aa0-4508-94d0-d46147c09dfa:
+    uuid: 0593909f-5aa0-4508-94d0-d46147c09dfa
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 1140
+      height: 1000
+      crop_type: focal_point
