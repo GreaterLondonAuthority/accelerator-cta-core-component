@@ -54,9 +54,7 @@ function gla_cta_preprocess_paragraph(&$variables) {
       $variables['content']['field_p_cta_image']['#theme'] = 'field___no_wrappers';
       $variables['content']['field_p_cta_image'][0]['#item_attributes']['class'] = [
         'u-object-cover',
-        // Setting a height is necessary to ensure the image still retains space
-        // while it is loading, even when inside a Flexbox container.
-        'u-h-full',
+        'u-w-full',
       ];
     }
   }
