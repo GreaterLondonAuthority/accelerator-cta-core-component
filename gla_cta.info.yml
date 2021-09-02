@@ -1,8 +1,18 @@
-name: 'CTA'
+name: 'GLA CTA'
 type: module
-description: 'Provides a cta content type.'
-core_version_requirement: ^8.8 || ^9
+description: 'Provides a CTA component'
+core_version_requirement: '^8.9 || ^9'
 package: Custom
 dependencies:
-  - drupal:media_library
-  - paragraphs:paragraphs
+  - 'drupal:field'
+  - 'drupal:image'
+  - 'drupal:link'
+  - 'drupal:media'
+  - 'drupal:media_library'
+  - 'drupal:options'
+  - 'drupal:responsive_image'
+  - 'focal_point:focal_point'
+  - 'gla_core_profile:gla_core_profile'
+  - 'gla_cta:gla_cta'
+  - 'media_responsive_thumbnail:media_responsive_thumbnail'
+  - 'paragraphs:paragraphs'

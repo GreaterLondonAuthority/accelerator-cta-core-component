@@ -6,18 +6,24 @@ dependencies:
       - gla_cta
       - options
       - paragraphs
-id: paragraph.field_p_c_type
-field_name: field_p_c_type
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_p_cta_type
+field_name: field_p_cta_type
 entity_type: paragraph
 type: list_string
 settings:
   allowed_values:
     -
       value: image
-      label: 'Image CTA'
+      label: Image
     -
-      value: text
-      label: 'Text CTA'
+      value: simple
+      label: Simple
+    -
+      value: talk_london
+      label: 'Talk London'
   allowed_values_function: ''
 module: options
 locked: false

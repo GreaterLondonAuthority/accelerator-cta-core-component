@@ -4,16 +4,17 @@ dependencies:
   enforced:
     module:
       - gla_cta
+      - link
       - paragraphs
-id: paragraph.field_p_c_title
-field_name: field_p_c_title
+  module:
+    - link
+    - paragraphs
+id: paragraph.field_p_cta_link
+field_name: field_p_cta_link
 entity_type: paragraph
-type: string
-settings:
-  max_length: 255
-  is_ascii: false
-  case_sensitive: false
-module: core
+type: link
+settings: {  }
+module: link
 locked: false
 cardinality: 1
 translatable: true

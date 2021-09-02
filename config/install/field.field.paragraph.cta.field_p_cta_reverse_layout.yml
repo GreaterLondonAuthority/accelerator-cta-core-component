@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_cta_reverse_layout
+    - paragraphs.paragraphs_type.cta
+id: paragraph.cta.field_p_cta_reverse_layout
+field_name: field_p_cta_reverse_layout
+entity_type: paragraph
+bundle: cta
+label: 'Reverse layout'
+description: 'Show the image on the right instead of the left'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: '1'
+  off_label: '0'
+field_type: boolean

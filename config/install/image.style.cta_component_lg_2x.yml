@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: cta_component_lg_2x
+label: 'CTA component (lg, 2x)'
+effects:
+  65d3ea8f-5623-4a40-be5c-b77f4e99de80:
+    uuid: 65d3ea8f-5623-4a40-be5c-b77f4e99de80
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 960
+      height: 900
+      crop_type: focal_point

@@ -1,0 +1,231 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 649aa2ea-266a-43ec-9c50-fee58a94411b
+  bundle: generic_content
+  default_langcode: en
+  depends:
+    99d317e6-ef6c-497c-b1bc-24b001e386f4: media
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'CTA component (example content)'
+  created:
+    -
+      value: 1628075984
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /cta-component-example-content
+      langcode: en
+      pathauto: 1
+  published_at:
+    -
+      value: 1628076244
+  field_c_gc_page_components:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: ee4957ce-8dfd-4cc2-ba35-e5798643a3de
+          bundle: page_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1630014785
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_p_ps_components:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: f2db0185-b574-4d9c-9d0d-f8102384e82e
+                  bundle: cta
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1628076015
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_p_cta_heading:
+                    -
+                      value: 'Image CTA heading'
+                  field_p_cta_image:
+                    -
+                      entity: 99d317e6-ef6c-497c-b1bc-24b001e386f4
+                  field_p_cta_link:
+                    -
+                      uri: 'https://example.com'
+                      title: 'Image CTA link text'
+                      options: {  }
+                  field_p_cta_summary:
+                    -
+                      value: 'Nulla efficitur diam sed orci gravida cursus. Phasellus cursus nulla congue dolor porttitor, non sodales quam laoreet. Proin eget lorem.'
+                  field_p_cta_type:
+                    -
+                      value: image
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 4e41b892-3b66-4ed5-b721-09ff6e4ccbee
+                  bundle: cta
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1628076015
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_p_cta_heading:
+                    -
+                      value: 'Image CTA heading'
+                  field_p_cta_image:
+                    -
+                      entity: 99d317e6-ef6c-497c-b1bc-24b001e386f4
+                  field_p_cta_link:
+                    -
+                      uri: 'https://example.com'
+                      title: 'Image CTA link text'
+                      options: {  }
+                  field_p_cta_reverse_layout:
+                    -
+                      value: true
+                  field_p_cta_summary:
+                    -
+                      value: 'Nulla efficitur diam sed orci gravida cursus. Phasellus cursus nulla congue dolor porttitor, non sodales quam laoreet. Proin eget lorem.'
+                  field_p_cta_type:
+                    -
+                      value: image
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: dc579151-19e4-42f1-965d-2cccef7a3e11
+                  bundle: cta
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1628076069
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_p_cta_heading:
+                    -
+                      value: 'Find out more about how to book NYE firework tickets'
+                  field_p_cta_link:
+                    -
+                      uri: 'https://example.com'
+                      title: 'Sign up for updates'
+                      options: {  }
+                  field_p_cta_type:
+                    -
+                      value: simple
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 06ca90d6-b391-4d14-8c7b-645ea1a4f1d5
+                  bundle: cta
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1628076099
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_p_cta_heading:
+                    -
+                      value: 'How can the London Fire Brigade improve their services and support you and your communities?'
+                  field_p_cta_link:
+                    -
+                      uri: 'https://example.com'
+                      title: 'Join the discussion'
+                      options: {  }
+                  field_p_cta_type:
+                    -
+                      value: talk_london
+          field_p_ps_heading:
+            -
+              value: 'CTA components'
+  field_remove_breadcrumbs:
+    -
+      value: false
+  field_remove_title:
+    -
+      value: false
+  field_sapi_exclude:
+    -
+      value: false
+  field_teaser:
+    -
+      value: Teaser
+  field_teaser_image:
+    -
+      entity: 99d317e6-ef6c-497c-b1bc-24b001e386f4
+  field_visually_hide_title:
+    -
+      value: false

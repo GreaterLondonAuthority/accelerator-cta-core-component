@@ -2,23 +2,20 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_p_c_link
+    - field.storage.paragraph.field_p_cta_summary
     - paragraphs.paragraphs_type.cta
   enforced:
     module:
       - gla_cta
-      - link
-id: paragraph.cta.field_p_c_link
-field_name: field_p_c_link
+id: paragraph.cta.field_p_cta_summary
+field_name: field_p_cta_summary
 entity_type: paragraph
 bundle: cta
-label: Link
+label: Summary
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings:
-  link_type: 17
-  title: 2
-field_type: link
+settings: {  }
+field_type: string_long

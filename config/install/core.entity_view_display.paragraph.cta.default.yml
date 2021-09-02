@@ -2,50 +2,27 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.cta.field_p_c_image
-    - field.field.paragraph.cta.field_p_c_link
-    - field.field.paragraph.cta.field_p_c_summary
-    - field.field.paragraph.cta.field_p_c_title
-    - field.field.paragraph.cta.field_p_c_type
+    - field.field.paragraph.cta.field_p_cta_heading
+    - field.field.paragraph.cta.field_p_cta_image
+    - field.field.paragraph.cta.field_p_cta_link
+    - field.field.paragraph.cta.field_p_cta_reverse_layout
+    - field.field.paragraph.cta.field_p_cta_summary
+    - field.field.paragraph.cta.field_p_cta_type
     - paragraphs.paragraphs_type.cta
+    - responsive_image.styles.cta_component
   enforced:
     module:
       - gla_cta
       - link
+  module:
+    - link
+    - media_responsive_thumbnail
 id: paragraph.cta.default
 targetEntityType: paragraph
 bundle: cta
 mode: default
 content:
-  field_p_c_image:
-    type: entity_reference_entity_view
-    weight: 3
-    label: hidden
-    settings:
-      view_mode: default
-      link: false
-    third_party_settings: {  }
-    region: content
-  field_p_c_link:
-    weight: 2
-    label: hidden
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
-    region: content
-  field_p_c_summary:
-    weight: 1
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: basic_string
-    region: content
-  field_p_c_title:
+  field_p_cta_heading:
     weight: 0
     label: hidden
     settings:
@@ -53,6 +30,44 @@ content:
     third_party_settings: {  }
     type: string
     region: content
+  field_p_cta_image:
+    type: media_responsive_thumbnail
+    weight: 3
+    label: hidden
+    settings:
+      responsive_image_style: cta_component
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_p_cta_link:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: null
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_p_cta_reverse_layout:
+    weight: 4
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_p_cta_summary:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
 hidden:
-  field_p_c_type: true
+  field_p_cta_type: true
   search_api_excerpt: true

@@ -1,6 +1,0 @@
-settings:
-  handler_settings:
-    target_bundles_drag_drop:
-      cta:
-        weight: 0
-        enabled: false

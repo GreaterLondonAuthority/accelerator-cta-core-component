@@ -6,8 +6,11 @@ dependencies:
       - gla_cta
       - media
       - paragraphs
-id: paragraph.field_p_c_image
-field_name: field_p_c_image
+  module:
+    - media
+    - paragraphs
+id: paragraph.field_p_cta_image
+field_name: field_p_cta_image
 entity_type: paragraph
 type: entity_reference
 settings:

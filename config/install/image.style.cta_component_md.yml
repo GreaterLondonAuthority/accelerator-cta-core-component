@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: cta_component_md
+label: 'CTA component (md)'
+effects:
+  bf629261-b715-4449-9d08-21b92b427ff1:
+    uuid: bf629261-b715-4449-9d08-21b92b427ff1
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 959
+      height: 466
+      crop_type: focal_point

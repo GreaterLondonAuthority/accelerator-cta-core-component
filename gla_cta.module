@@ -11,21 +11,73 @@ use Drupal\Core\Form\FormStateInterface;
  * Implements hook_field_widget_WIDGET_TYPE_form_alter().
  */
 function gla_cta_field_widget_paragraphs_form_alter(&$element, FormStateInterface $form_state, $context) {
+  /** @var \Drupal\gla_core_profile\FormHelper $formHelper */
+  $formHelper = \Drupal::service('gla_core_profile.form_helper');
 
-  // Use Drupal States to hide the image field if the CTA type is not image.
   if ($element['#paragraph_type'] == 'cta') {
-    if (isset($element['subform']['field_p_c_image'])) {
-      if (!empty($element['subform']['#parents'])) {
-        $parents = $element['subform']['#parents'];
-        $name = array_shift($parents) . '[';
-        $name .= implode('][', $parents);
-        $name .= '][field_p_c_type]';
-        $element['subform']['field_p_c_image']['#states'] = [
+    if (!empty($element['subform']['#parents'])) {
+      $cta_type_name = $formHelper->buildNameSelector($element['subform']['field_p_cta_type']);
+
+      // Piggyback on Webform's #states enhancements as they have a neat
+      // 'wipe invisible fields but restore their values if they later become
+      // visible' feature that saves us having to write any validators for this
+      // sort of thing.
+      // @see https://www.drupal.org/project/webform/issues/3169230
+      $element['subform']['#attached']['library'][] = 'webform/webform.states';
+      // Opt-in to Webform's #states enhancements. Jacob has confirmed that it's
+      // okay for non-Webform fields to do this:
+      // https://www.drupal.org/project/webform/issues/3169230#comment-13813012
+      // I'm not sure this handles media fields, so I've left that one out.
+      $element['subform']['field_p_cta_summary']['widget']['#attributes']['data-is-webform-element'] = '';
+      $element['subform']['field_p_cta_reverse_layout']['widget']['#attributes']['data-is-webform-element'] = '';
+
+      // Only show the image field for image CTA types.
+      if (isset($element['subform']['field_p_cta_image'])) {
+        $element['subform']['field_p_cta_image']['#states'] = [
           'visible' => [
-            ':input[name="' . $name . '"]' => ['value' => 'image'],
+            ':input[name="' . $cta_type_name . '"]' => ['value' => 'image'],
           ],
         ];
       }
+
+      // Only show the summary field for image CTA types.
+      if (isset($element['subform']['field_p_cta_summary'])) {
+        $element['subform']['field_p_cta_summary']['#states'] = [
+          'visible' => [
+            ':input[name="' . $cta_type_name . '"]' => ['value' => 'image'],
+          ],
+        ];
+      }
+
+      // Only show the reverse layout field for image CTA types.
+      if (isset($element['subform']['field_p_cta_reverse_layout'])) {
+        $element['subform']['field_p_cta_reverse_layout']['#states'] = [
+          'visible' => [
+            ':input[name="' . $cta_type_name . '"]' => ['value' => 'image'],
+          ],
+        ];
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_paragraph().
+ */
+function gla_cta_preprocess_paragraph(&$variables) {
+  /** @var \Drupal\paragraphs\Entity\Paragraph $paragraph */
+  $paragraph = $variables['paragraph'];
+
+  if ($paragraph->bundle() == 'cta') {
+    $cta_type = $paragraph->field_p_cta_type->value;
+
+    if ($cta_type === 'image') {
+      // Remove the wrapping div from the image field.
+      $variables['content']['field_p_cta_image']['#theme'] = 'field___no_wrappers';
+      $variables['content']['field_p_cta_image'][0]['#item_attributes']['class'] = [
+        'u-object-cover',
+        'u-w-full',
+      ];
     }
   }
 }

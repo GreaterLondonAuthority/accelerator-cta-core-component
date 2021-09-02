@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: cta_component_sm
+label: 'CTA component (sm)'
+effects:
+  08b67f94-dadf-4f7b-8f38-65186af85e52:
+    uuid: 08b67f94-dadf-4f7b-8f38-65186af85e52
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 575
+      height: 450
+      crop_type: focal_point
