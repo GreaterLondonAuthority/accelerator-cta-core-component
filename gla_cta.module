@@ -48,6 +48,15 @@ function gla_cta_field_widget_paragraphs_form_alter(&$element, FormStateInterfac
           ],
         ];
       }
+
+      // Only show the reverse layout field for image CTA types.
+      if (isset($element['subform']['field_p_cta_reverse_layout'])) {
+        $element['subform']['field_p_cta_reverse_layout']['#states'] = [
+          'visible' => [
+            ':input[name="' . $cta_type_name . '"]' => ['value' => 'image'],
+          ],
+        ];
+      }
     }
   }
 }
