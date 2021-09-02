@@ -5,6 +5,7 @@ dependencies:
     - field.field.paragraph.cta.field_p_cta_heading
     - field.field.paragraph.cta.field_p_cta_image
     - field.field.paragraph.cta.field_p_cta_link
+    - field.field.paragraph.cta.field_p_cta_reverse_layout
     - field.field.paragraph.cta.field_p_cta_summary
     - field.field.paragraph.cta.field_p_cta_type
     - paragraphs.paragraphs_type.cta
@@ -49,6 +50,16 @@ content:
       target: '0'
     third_party_settings: {  }
     type: link
+    region: content
+  field_p_cta_reverse_layout:
+    weight: 4
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
     region: content
   field_p_cta_summary:
     weight: 1
