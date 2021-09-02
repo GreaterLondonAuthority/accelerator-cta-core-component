@@ -18,6 +18,19 @@ function gla_cta_field_widget_paragraphs_form_alter(&$element, FormStateInterfac
     if (!empty($element['subform']['#parents'])) {
       $cta_type_name = $formHelper->buildNameSelector($element['subform']['field_p_cta_type']);
 
+      // Piggyback on Webform's #states enhancements as they have a neat
+      // 'wipe invisible fields but restore their values if they later become
+      // visible' feature that saves us having to write any validators for this
+      // sort of thing.
+      // @see https://www.drupal.org/project/webform/issues/3169230
+      $element['subform']['#attached']['library'][] = 'webform/webform.states';
+      // Opt-in to Webform's #states enhancements. Jacob has confirmed that it's
+      // okay for non-Webform fields to do this:
+      // https://www.drupal.org/project/webform/issues/3169230#comment-13813012
+      // I'm not sure this handles media fields, so I've left that one out.
+      $element['subform']['field_p_cta_summary']['widget']['#attributes']['data-is-webform-element'] = '';
+      $element['subform']['field_p_cta_reverse_layout']['widget']['#attributes']['data-is-webform-element'] = '';
+
       // Only show the image field for image CTA types.
       if (isset($element['subform']['field_p_cta_image'])) {
         $element['subform']['field_p_cta_image']['#states'] = [
